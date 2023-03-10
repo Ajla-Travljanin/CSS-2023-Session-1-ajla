@@ -69,3 +69,13 @@ button:focus {
   outline: none;
   background-color: #5e3370;
 }
+
+#submit {
+  background-color: #0074D9; 
+}
+#submit:hover {
+  background-color: #001f3f; 
+}
+#submit:active {
+  background-color: #001f3f; 
+}

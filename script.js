@@ -6,6 +6,7 @@ const questions = [
     b: "Coding Style Sheets",
     c: "Cascading Simple Sheets",
     d: "Cars SUVs & Sailboats",
+    e: "Cats, Snakes and Snail",
     correct: "a",
   },
   {
@@ -14,6 +15,7 @@ const questions = [
     b: "2021",
     c: "2022",
     d: "2023",
+    e: "1825",
     correct: "b",
   },
   {
@@ -22,8 +24,28 @@ const questions = [
     b: "Bosnia and Herzegovina Futures Foundation",
     c: "Bosnia and Herzegovina Factory Foundation",
     d: "none of the above",
+    e: "From the garage",
     correct: "b",
   },
+  {
+    question: "What is the capital of Germany",
+    a: "Paris",
+    b: "London",
+    c: "Lisabon",
+    d: "Berlin",
+    e: "Zenica",
+    correct: "d",
+  },
+  {
+    question: "What did Alexander Fleming invent?",
+    a: "Drugs",
+    b: "Airplanes",
+    c: "The telephone",
+    d: "The wheel",
+    e: "Penicillin",
+    correct: "e",
+  },
+  
 ];
 
 //Fetching the HTML elements
@@ -34,6 +56,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
 const submitButton = document.getElementById("submit");
 
 //Counters
@@ -63,6 +86,7 @@ const loadQuiz = () => {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
 };
 
 //Loading the quiz
